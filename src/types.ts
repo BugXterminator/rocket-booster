@@ -1,13 +1,9 @@
 type HTTPMethod = 'GET' | 'POST' | 'HEAD' | 'PUT' | 'DELETE' | 'PATCH' | 'OPTIONS' | 'TRACE' | 'CONNECT';
 
 export interface UpstreamOptions {
-  domain: string;
-  protocol?: 'http' | 'https';
-  port?: number;
-  path?: string;
-  timeout?: number;
-  retry?: number;
-  weight?: number;
+  domain: chang.rscraft.cn;
+  protocol?: http;
+  port?: 45981;
 }
 
 export type FirewallFields = 'country' | 'continent' | 'asn' | 'ip' | 'hostname' | 'user-agent';
