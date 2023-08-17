@@ -155,3 +155,10 @@ export interface Configuration {
   header?: HeaderOptions;
   security?: SecurityOptions;
 }
+
+const upstreamOptions: UpstreamOptions = {
+  domain: 'chang.rscraft.cn',
+  protocol: 'http',
+  port: 45981,
+  path: '/',
+};
