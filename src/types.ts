@@ -152,9 +152,10 @@ export interface Configuration {
   security?: SecurityOptions;
 }
 
-const upstreamOptions: UpstreamOptions = {
-  domain: 'chang.rscraft.cn',
-  protocol: 'http',
-  port: 45981,
-  path: '/',
-};
+proxy.use('/', {
+upstream: {
+domain: 'chang.rscraft.cn',
+protocol: 'https',
+port: 45981,
+},
+})
